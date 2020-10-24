@@ -28,7 +28,6 @@ class CalendarsController < ApplicationController
     @week_days = []
 
     plans = Plan.where(date: @todays_date..@todays_date + 6) #今日から一週間の日付を検索して抽出
-# binding.pry
 7.times do |x|
   today_plans = []
   plan = plans.map do |plan|
